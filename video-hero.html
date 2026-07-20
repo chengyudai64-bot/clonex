@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="theme-color" content="#050505">
+  <meta name="format-detection" content="telephone=no">
+  <title>AI Character — Scroll Video Hero</title>
+  <link rel="stylesheet" href="video-hero.css">
+</head>
+<body>
+  <main class="hero" id="hero">
+    <div class="stage">
+      <video id="heroVideo" muted playsinline webkit-playsinline preload="auto">
+        <source src="front/videos/loop1_60fps.mp4" type="video/mp4">
+      </video>
+      <div class="shade"></div>
+      <div class="scanlines"></div>
+      <div class="noise"></div>
+      <header class="topbar"><b class="brand"><i></i>RTFKT</b><button type="button">MY INVENTORY</button></header>
+      <div class="title"><small>RTFKT AVATAR PROJECT</small><h1>CLONE<span>X</span></h1></div>
+      <div class="reticle"><i></i></div>
+      <div class="scroll-label">SCROLL TO CONTROL <b>↓</b></div>
+      <div class="progress"><i></i></div>
+    </div>
+  </main>
+
+  <aside class="uploader" id="uploader">
+    <button class="toggle" type="button" aria-label="打开视频工具">VIDEO</button>
+    <div class="panel">
+      <strong>AI CHARACTER VIDEO</strong>
+      <p>选择本地 MP4 / WebM，滚动页面即可控制视频进度。</p>
+      <label>选择视频<input id="videoFile" type="file" accept="video/mp4,video/webm,video/quicktime"></label>
+      <label class="range">滚动长度 <input id="scrollLength" type="range" min="200" max="800" value="500"><output>500vh</output></label>
+      <label class="range">平滑度 <input id="smoothness" type="range" min="5" max="35" value="16"><output>0.16</output></label>
+      <button id="resetVideo" type="button">恢复示例视频</button>
+      <small>建议：8–15 秒、30 FPS、H.264、无音频、关键帧间隔 10–15 帧。</small>
+    </div>
+  </aside>
+  <script src="video-hero.js"></script>
+</body>
+</html>
