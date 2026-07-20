@@ -3,7 +3,7 @@ const path = require('path');
 
 const root = __dirname;
 const output = path.join(root, 'dist');
-const entries = ['index.html', 'assets', 'front', 'public', 'world'];
+const entries = ['index.html', 'wechat-compat.js', 'assets', 'front', 'public', 'world'];
 
 fs.rmSync(output, { recursive: true, force: true });
 fs.mkdirSync(output, { recursive: true });
