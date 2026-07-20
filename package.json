@@ -1,0 +1,14 @@
+{
+  "name": "clonex-local",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static local mirror of the RTFKT CloneX interactive website",
+  "scripts": {
+    "build": "node build.js",
+    "start": "node server.js",
+    "preview": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
