@@ -35,3 +35,9 @@ Three.js scene. Drag to rotate and scroll to move the camera. The supplied FBX
 is a static 484,125-triangle mesh with no UV coordinates, embedded textures,
 rig, or animation, so the preview uses a procedural dark material and red/blue
 lighting.
+
+The production CloneX V4 Hero manifest now loads
+`world/assets/custom/custom-avatar-hero.glb`. `prepare-custom-hero.js` normalizes
+the static FBX conversion for the original camera scale, and
+`patch-custom-avatar.ps1` makes the original runtime tolerate an avatar without
+UVs or skeletal animation.
