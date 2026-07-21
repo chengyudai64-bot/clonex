@@ -3,3 +3,4 @@ dist/
 .edge-*/
 .chrome-*/
 *.log
+.tools/

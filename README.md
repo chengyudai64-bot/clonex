@@ -27,3 +27,11 @@ WebGL fallback handling.
 Open `/video-hero.html` and use the `VIDEO` control to select an AI-generated
 MP4 or WebM file. Desktop browsers map page scroll progress to the video
 timeline; WeChat uses muted inline looping playback for compatibility.
+
+## Custom FBX avatar preview
+
+Open `/custom-model.html` to inspect the converted custom avatar in a local
+Three.js scene. Drag to rotate and scroll to move the camera. The supplied FBX
+is a static 484,125-triangle mesh with no UV coordinates, embedded textures,
+rig, or animation, so the preview uses a procedural dark material and red/blue
+lighting.

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="theme-color" content="#090006">
+  <title>Custom Avatar — WebGL Preview</title>
+  <link rel="stylesheet" href="custom-model.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three/three.module.js","three/addons/":"./vendor/three/addons/"}}</script>
+</head>
+<body>
+  <main id="experience">
+    <div class="sticky">
+      <canvas id="scene"></canvas>
+      <div class="glow"></div><div class="scanlines"></div>
+      <header><b><i></i>RTFKT</b><span>CUSTOM AVATAR / 001</span></header>
+      <section class="copy"><small>YOUR CHARACTER MODEL</small><h1>20<span>.</span>000</h1><p>Drag to rotate · Scroll to inspect</p></section>
+      <div class="frame"><i></i><i></i><i></i><i></i></div>
+      <aside id="status">LOADING MODEL <b>0%</b></aside>
+      <div class="scroll">SCROLL TO CONTROL ↓</div>
+    </div>
+  </main>
+  <script type="module" src="custom-model.js"></script>
+</body>
+</html>
